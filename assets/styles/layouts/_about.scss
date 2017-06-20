@@ -1,0 +1,20 @@
+.About {
+    h2 {
+        color: $brand-secondary;
+    }
+    &__small-box {
+        background: $brand-secondary;
+        padding-top: 6rem;
+        padding-left: 1rem;
+        padding-bottom: .5rem;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        h3 {color: white;margin-bottom: 0;}
+        &:hover {
+            background: darken($brand-secondary, 10%);
+        }
+    }
+    video {
+        margin-bottom: 1.5rem;
+    }
+}

@@ -1,0 +1,41 @@
+h1,h2,h3,h4,h5,h6, .h1, .h2, .h3, .h4, .h5, .h6, hgroup,
+ul,ol,dd,
+p,figure,
+pre,table,fieldset,hr{
+    margin-bottom:1.5rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: $brand-primary;
+}
+
+p, ul, li {
+    color: #878787;
+}
+
+// Helpers
+.island {
+    padding: 1.5rem 0;
+}
+
+.l-island {
+    padding: 3rem 0;
+}
+
+.xl-island {
+    padding: 6rem 0;
+}
+
+.coast-s {
+    padding-bottom: 1.5rem;
+}
+
+.coast-n {
+    padding-top: 1.5rem;
+}
+
+hr {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}

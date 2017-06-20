@@ -1,0 +1,19 @@
+.Product-Categories {
+
+}
+
+.Category {
+    // background: url(http://www.publicdomainpictures.net/pictures/220000/velka/green-grass-1493898873qXe.jpg);
+    padding: 110px 0px 0px 0px;
+    border-radius: 5px;
+    margin: .5rem 0;
+    border: 1px solid #1a5b8b;
+    h2 {
+        font-size: 24px;
+        margin-bottom: 0;
+        background: #1a5b8b;
+        padding: 5px;
+        color: white;
+        a {color: white; &:hover{text-decoration: none;}}
+    }
+}

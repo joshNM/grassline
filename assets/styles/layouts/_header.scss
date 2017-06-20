@@ -1,0 +1,49 @@
+.Header {
+    
+    input {
+        background: #eeeeee;
+        border-radius: 15px;
+        border: 1px solid #e5e5e5;
+        padding: 2.5px 15px;
+        margin-right: 10px;
+    }
+
+    .menu-primary-navigation-container {
+        text-align: right;
+        margin-top: 35px;
+        li {
+            display: inline-block;
+            // margin-left: 10px;
+            color: $brand-secondary;
+            a {color: $brand-secondary;}
+            // border-right: 1px solid $brand-secondary;
+            padding: 0 10px;
+        }
+    }
+    .col-md-9 .List {
+        text-align: right;
+        li {
+            display: inline-block;
+        }
+    }
+    .Product-category-nav {
+        background: #1a5b8b;
+        text-align: center;
+        padding: 5px 0;
+        border-bottom: 5px solid #4cac4d;
+        ul {
+            margin-bottom: 0px;
+        }
+        li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+        a {
+            color: white;
+            font-weight: bold;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}

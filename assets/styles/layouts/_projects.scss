@@ -1,0 +1,25 @@
+.Latest-projects {
+    h2 {
+        color: $brand-secondary;
+    }
+    .Project {
+        background: #eeeeee;
+        border-radius: 5px;
+        img {
+            max-width: 100%;
+            border-top-right-radius: 5px;
+            border-top-left-radius: 5px;
+        }
+        &__content {
+            padding: 12px;
+            h3 {
+                color: $brand-secondary;
+                margin-bottom: 10px;
+                font-size: 20px;
+            }
+            p {
+                margin-bottom: 10px;
+            }
+        }
+    }
+}

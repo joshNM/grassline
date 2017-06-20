@@ -1,0 +1,25 @@
+.Jumbotron {
+    position: relative;
+    img {
+        width: 100%;
+        height: auto;
+    }
+    .jumbo-right {
+        position: absolute;
+        right: 20px;
+        color: white;
+        z-index: 99;
+        font-size: 30px;
+        top: 45%;
+        cursor: pointer;
+    }
+    .jumbo-left {
+        position: absolute;
+        left: 20px;
+        color: white;
+        z-index: 99;
+        font-size: 30px;
+        top: 45%;
+        cursor: pointer;
+    }
+}

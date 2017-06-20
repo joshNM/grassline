@@ -1,0 +1,42 @@
+.Top-Products {
+    &__header {
+        background: #9ec322;
+        padding: 12px 0;
+        h2 {color: white; margin-bottom: 0;}
+    }
+}
+
+.Products {
+    text-align: center;
+    a:hover {
+        text-decoration: none;
+    }
+    a:focus {
+        text-decoration: none;
+    }
+    
+    .Product {
+        h3 {
+            color: #3c3c3b;
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+        h4 {
+            color: $brand-secondary;
+            font-size: 18px;
+        }
+        &__img {
+            position: relative;
+        }
+        img {
+            max-width: 100%;
+            margin-bottom: 15px;
+        }
+        &__sale-img {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+    }
+    
+}
