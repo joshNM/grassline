@@ -31,6 +31,12 @@
             nextButton: '.bundle-right',
             prevButton: '.bundle-left',
         });
+        $('.Toggle__title').click(function(){
+          $(this).parent().find('.Toggle__info').toggle();
+        })
+        // Product Archice Match Height
+        $('.woocommerce-product-gallery__wrapper div').matchHeight();
+        $('.product').matchHeight();
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired

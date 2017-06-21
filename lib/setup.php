@@ -10,11 +10,11 @@ use Roots\Sage\Assets;
 function setup() {
   // Enable features from Soil when plugin is activated
   // https://roots.io/plugins/soil/
-  add_theme_support('soil-clean-up');
-  add_theme_support('soil-nav-walker');
-  add_theme_support('soil-nice-search');
-  add_theme_support('soil-jquery-cdn');
-  add_theme_support('soil-relative-urls');
+  // add_theme_support('soil-clean-up');
+  // add_theme_support('soil-nav-walker');
+  // add_theme_support('soil-nice-search');
+  // add_theme_support('soil-jquery-cdn');
+  // add_theme_support('soil-relative-urls');
 
   // Make theme available for translation
   // Community translations can be found at https://github.com/roots/sage-translations
@@ -39,7 +39,7 @@ function setup() {
 
   // Enable post formats
   // http://codex.wordpress.org/Post_Formats
-  add_theme_support('post-formats', ['aside', 'gallery', 'link', 'image', 'quote', 'video', 'audio']);
+  // add_theme_support('post-formats', ['aside', 'gallery', 'link', 'image', 'quote', 'video', 'audio']);
 
   // Enable HTML5 markup support
   // http://codex.wordpress.org/Function_Reference/add_theme_support#HTML5
@@ -102,12 +102,11 @@ function assets() {
   wp_enqueue_style( 'aoscss', 'https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css' );
   wp_enqueue_style( 'slicknavcss', 'https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/slicknav.min.css' );
   wp_enqueue_style( 'opensans', 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,700' );
-  
   wp_enqueue_script( 'aosjs', 'https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js', array('jquery'), '1' , true ); 
   wp_enqueue_script( 'swiperjs', 'https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.jquery.min.js', array('jquery'), '1' , true );
   wp_enqueue_script( 'matchheighjs', 'https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.2/jquery.matchHeight-min.js', array('jquery'), '1' , true );
   wp_enqueue_script( 'slicknavjs', 'https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js', array('jquery'), '1' , true );
-  wp_enqueue_script('sage/js', Assets\asset_path('scripts/main.js'), ['jquery'], null, true);
+  wp_enqueue_script('sage/js', Assets\asset_path('scripts/main.js'), ['jquery'], null, false);
 }
 add_action('wp_enqueue_scripts', __NAMESPACE__ . '\\assets', 100);
 

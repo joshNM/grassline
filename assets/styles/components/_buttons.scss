@@ -14,3 +14,15 @@
         background: #1a5b8b !important;
     }
 }
+.woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt, .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button {
+    display: inline-block;
+    border-radius: 20px;
+    padding: 10px 25px !important;
+    color: white;
+    transition: all 0.2s;
+    background: #1a5b8b !important;
+    &:hover {
+        color: white !important;
+        background: darken(#1a5b8b, 20%);
+    }
+}
