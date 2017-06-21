@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-12 col-md-3">
-               <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/header-logo.png" alt="Logo">
+               <a href="<?php echo home_url(); ?>"><img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/header-logo.png" alt="Logo"></a>
             </div>
             <div class="col-sm-12 col-md-9">
                 <nav>

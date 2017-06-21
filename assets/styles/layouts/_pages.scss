@@ -63,6 +63,7 @@
         }
         &__info {
             display: none;
+            // padding: 1rem !important;
         }
     }
 }
@@ -119,6 +120,10 @@
     display: none !important;
 }
 
+.woocommerce-noreviews {
+    // margin-top: 1.5rem;
+}
+
 .related h2 {
     color: #1a5b8b;
     font-weight: bold;
@@ -149,6 +154,7 @@
     margin-bottom: 0px;
 }
 
+
 .entry-summary .woocommerce-Price-amount {
     font-size: 30px;
     font-weight: bold;
@@ -175,4 +181,95 @@ ul.products .Product__sale-img {
 
 .tax-product_cat ul.products li.product {
     width: 30.05%;
+}
+
+// Contact
+.Contact-page {
+    h2, h3, ul, li {
+        color: $brand-secondary;
+    }
+    ul {
+        list-style-type: none;
+        padding-left: 0;
+    }
+    input, textarea {
+        width: 100%;
+        padding: 5px;
+        background: #eeeeee;
+        border: 1px solid #dedede;
+        margin-bottom: 12px;
+        border-radius: 5px;
+    }
+}
+
+// Breadsticks
+.breadcrumb-container.theme1 a {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    padding: 0px !important;
+    color: #777 !important;
+    font-size: .92rem !important;
+}
+.breadcrumb-container {
+    margin-bottom: 1rem !important
+}
+.breadcrumb-container li .separator {
+    margin: 0 5px !important;
+    font-size: 0.92rem;
+}
+
+.breadcrumb-container.theme1 li:last-child .separator {
+    // display: none;
+}
+
+.woocommerce .woocommerce-breadcrumb {
+     font-family: 'Open Sans', sans-serif;
+}
+
+.woocommerce-ordering, .woocommerce-result-count {
+    display: none;
+}
+
+// SPECIAL OFFERS
+.Special-offers {
+    .Offers-wrap {
+        list-style-type: none;
+        li {
+            position: relative;
+            width: 24%;
+            float: left;
+            // margin: 0 1%;
+            img {
+
+            }
+            .Product__sale-img {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+            }
+        }
+    }
+}
+
+// Checkout
+.woocommerce .col2-set .col-1, .woocommerce-page .col2-set .col-1 {
+    float: left !important;
+    width: 48% !important;
+    max-width: 100%;
+    display: relative;
+}
+
+.woocommerce .col2-set .col-2, .woocommerce-page .col2-set .col-2 {
+        max-width: 100%;
+    display: relative;
+}
+.checkout {
+    input, textarea {
+        width: 100%;
+        padding: 5px;
+        background: #eeeeee;
+        border: 1px solid #dedede;
+        margin-bottom: 12px;
+        border-radius: 5px;
+    }
 }

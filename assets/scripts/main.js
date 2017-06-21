@@ -32,7 +32,7 @@
             prevButton: '.bundle-left',
         });
         $('.Toggle__title').click(function(){
-          $(this).parent().find('.Toggle__info').toggle();
+          $(this).parent().find('.Toggle__info').slideToggle();
         })
         // Product Archice Match Height
         $('.woocommerce-product-gallery__wrapper div').matchHeight();
