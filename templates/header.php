@@ -28,4 +28,12 @@
         ?>
     </div>
 
+    <div class="Header__fixed">
+        <ul>
+            <li><a href=""><i class="fa fa-phone" aria-hidden="true"></i><br>Contact</a></li>
+            <li><a href=""><i class="fa fa-book" aria-hidden="true"></i><br>Next Day Delivery</a></li>
+            <li><a href=""><i class="fa fa-book" aria-hidden="true"></i><br>Brochure</a></li>
+        </ul>
+    </div>
+
 </header>

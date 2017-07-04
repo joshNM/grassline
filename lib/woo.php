@@ -40,12 +40,12 @@ add_action( 'woocommerce_before_shop_loop', 'add_wrapper_to_products_before', 10
 add_action( 'woocommerce_before_shop_loop', 'add_wrapper_to_products_after', 10 );
 
 // 5. Change number or products per row to 3
-add_filter('loop_shop_columns', 'loop_columns');
-if (!function_exists('loop_columns')) {
-    function loop_columns() {
-        return 3; // 3 products per row
-    }
-}
+// add_filter('loop_shop_columns', 'loop_columns');
+// if (!function_exists('loop_columns')) {
+//     function loop_columns() {
+//         return 3; // 3 products per row
+//     }
+// }
 // ================================================================================
 // SINGLE PAGE EDITS
 function add_product_toggles(){
