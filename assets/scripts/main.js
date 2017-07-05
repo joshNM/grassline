@@ -31,6 +31,10 @@
             nextButton: '.bundle-right',
             prevButton: '.bundle-left',
         });
+        var swiperTestimonials = new Swiper('.swiper-testimonials', {
+            autoplay: 5000,
+            effect: 'slide'
+        });
         $('.Toggle__title').click(function(){
           $(this).parent().find('.Toggle__info').slideToggle();
         })

@@ -31,3 +31,24 @@ function excerpt_more() {
   return ' &hellip; <a href="' . get_permalink() . '">' . __('Continued', 'sage') . '</a>';
 }
 add_filter('excerpt_more', __NAMESPACE__ . '\\excerpt_more');
+
+/**
+ * Add Testimonial CPT
+ */
+add_action( 'init', __NAMESPACE__ . '\\create_post_type_testimonial', 0);
+function create_post_type_testimonial() {
+    register_post_type( 'testimonial',
+        array(
+            'labels' => array(
+                'name' => __( 'Testimonials' ),
+                'singular_name' => __( 'Testimonial' )
+            ),
+        'public' => true,
+        'has_archive' => true,
+        'menu_icon' => 'dashicons-clipboard',
+        'rewrite' => true,
+        'capability_type' => 'post',
+        'supports' => array('title', 'editor', 'thumbnail'),
+        )
+    );
+}
